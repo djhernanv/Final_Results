@@ -6,18 +6,18 @@
 {% endblock %}
 
 {% block content %}
-
+<hr>
 <div class="jumbotron">
 <h1>Thank you!</h1>
 <br>
-You have finished this session. Please wait at your desk!
+    You have finished this session.
+    <p>
+        Please remain seated while the other participants finish. <br>
+	    The experimenter will announce when you can line up in front of the glass door to collect your payment.
 </div>
 
-<div class="card">
-  <div class="card-header text-white bg-primary mb-3"> Payoffs: </div>
-  <div class="card-body">
-      You have earned 10 Euro
-  </div>
+    <div class="alert alert-primary" role="alert">
+        <h4>Your total payoff is {{ payoff }}</h4>
 </div>
 
 {% endblock %}

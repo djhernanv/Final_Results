@@ -12,7 +12,11 @@ class ResultsWaitPage(WaitPage):
 
 
 class Results(Page):
-    pass
+    def vars_for_template(self):
+        return {'net_income_1': self.participant.vars['net_income_1'],
+                'net_income_2': self.participant.vars['net_income_2'],
+                'payoff': self.participant.payoff,
+                }
 
 
 page_sequence = [
